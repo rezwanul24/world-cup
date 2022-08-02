@@ -1,0 +1,272 @@
+/* -----common css----- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .6s;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+/* -----------Header---------- */
+
+.header{
+    
+    width: 80%;
+    margin: auto;
+    
+}
+
+.header_area{
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    background-color: tomato;
+}
+
+.text_area{
+    margin-left: 5%;
+}
+
+h1{
+    font-size: 3.37rem;
+}
+
+.banner img{
+    position: relative;
+    width: 100%;
+    animation: imageTransition 5s ease-in-out infinite;
+}
+
+.half_width{
+    width: 50%;
+}
+
+.btn_red {
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.btn_red:hover{
+    background-color: black;
+}
+
+
+/* ------- Animation part--------- */
+
+
+@keyframes imageTransition {
+    0%{
+       transform: translate(0);
+    }
+    50%{
+       transform: translate(30px , 30px);
+    }
+    100%{
+        transform: translate(0);
+     }
+
+}
+
+/* ============ Main match css =========== */
+.live-match {
+    display: grid;
+    grid-template-columns: 260px auto;
+}
+
+#live-match{
+    margin-top: 40px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+aside.menu {
+    background: #000;
+    padding: 30px 0;
+    height: 244px;
+    border-radius: 10px;
+   
+    margin-right: 21px;
+}
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 16px;
+    text-align: center;
+}
+aside .btn {
+    margin: 5px 0;
+}
+
+a.btn.active {
+    background: red;
+    border: none;
+    color: #fff;
+}
+/* asside end */
+.btn{
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 10px 25px;
+    margin: 20px 0;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    transition: .6s;
+}
+.btn:hover{
+background-color: #000;
+color: #fff;
+}
+
+article.matches {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.match {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 40px #ddd;
+}
+.icons {
+    display: flex;
+   
+    margin-top: 20px;
+}
+
+.icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 10px;
+}
+
+.icon img{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+/* ===== footer css ===== */
+
+#footer {
+    background: #000;
+    color: #fff;
+    
+    padding: 41px;
+}
+
+#footer .content h1{
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+.menu-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    font-size: 25px;
+    padding: 14px;
+    color: #fff;
+    
+   
+}
+.social-links a:hover{
+    background: #fff;
+    color: black;
+    border-radius: 50%;
+   
+}
+
+/* second part */
+
+/* sedule */
+
+#sedule .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sedule .image img{
+    width: 38%;
+    
+}
+
+#sedule h6 {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.match:hover .image img{
+
+        transform: scale(1.1);
+        border-radius: 5px;
+
+}
+
+
+.center {
+    text-align: center;
+    padding: 10px;
+  
+    margin-top: 20px;
+}
+.center p {
+    color: #4D4D4D;
+   
+    padding-top: 5px;
+}
+
+/* extra button for bonus mark  */
+
+button.btn.show {
+    background: red;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 14px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: none;
+}
